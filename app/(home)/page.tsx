@@ -1,11 +1,5 @@
-import Button from "@/components/ui/Button";
-
 const HomePage = () => {
-  return (
-    <main>
-      <Button disabled={true}>submit now</Button>
-    </main>
-  );
+  return <main>HomePage</main>;
 };
 
 export default HomePage;
