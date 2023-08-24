@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
 
 export const buttonVariants = cva(
-  "inline-block text-center px-6 py-3 rounded-xl border eq font-medium active:scale-105 disabled:border-grey disabled:bg-grey disabled:text-dark/50 disabled:cursor-not-allowed",
+  "inline-block text-center px-6 py-2 rounded-[0px_0px_0px_20px] border eq font-medium active:scale-105 disabled:border-grey disabled:bg-grey disabled:text-dark/50 disabled:cursor-not-allowed",
   {
     variants: {
       variant: {
