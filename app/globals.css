@@ -1,11 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* Embracing Transformation with Mimosha */
 /* COMMON CLASSES */
 .wrapper {
   @apply container mx-auto px-5 md:px-0;
 }
+
+.section-padding {
+  @apply my-16 md:my-32;
+}
+
 .eq {
   transition: 300ms cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -19,4 +24,12 @@
 }
 .link-item:hover::after {
   @apply w-full;
+}
+
+.headline1 {
+  @apply 2xl:text-8xl gap-3.5 text-2xl sm:text-[2.5rem] md:text-8xl 2xl:text-[8rem];
+}
+
+.hero-col-height {
+  @apply h-[6rem] md:h-[8rem];
 }
