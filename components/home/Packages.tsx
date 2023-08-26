@@ -10,7 +10,7 @@ const Packages = () => {
         title="Unlock Beauty's Best Packages."
         subtitle='Packages'
       />
-      <HorizontalTab tabs={['Beauty', 'Wellness', 'Events']}>
+      <HorizontalTab tabs={['Wellness', 'Beauty', 'Events']}>
         {/* Wellness */}
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
