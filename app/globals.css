@@ -10,7 +10,7 @@ main {
   @apply pt-20;
 }
 .section-padding {
-  @apply my-16 md:my-32;
+  @apply py-16 md:py-20;
 }
 
 .eq {

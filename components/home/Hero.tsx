@@ -10,7 +10,7 @@ const pladairDisplay = Playfair_Display({
 const Hero = () => {
   //  Mimosa's Grace: Beauty Explore
   return (
-    <section className='wrapper section-padding h-[calc(100vh-5rem)] '>
+    <section className='wrapper mt-28 h-[calc(100vh-5rem)] '>
       <div className='relative grid h-[80%] w-full grid-rows-6 items-center sm:h-full md:gap-5 '>
         {/* FIRST ROW */}
         <div className='hero-col-height grid w-full grid-cols-[45%_auto]  gap-7 md:grid-cols-[35%_auto] lg:gap-14 '>
