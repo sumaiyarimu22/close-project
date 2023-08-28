@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <hr className='border-grey ' />
+        <hr className='border-gray ' />
 
         {/* SECOND ROW */}
         <div className='hero-col-height grid w-full grid-cols-[25%_auto_30%] gap-7 md:grid-cols-[30%_auto_35%] lg:gap-14 '>
@@ -61,7 +61,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <hr className='border-grey' />
+        <hr className='border-gray' />
 
         {/* THIRD ROW */}
         <div className='hero-col-height grid w-full grid-cols-[45%_auto] gap-7 md:grid-cols-[50%_auto] lg:gap-14 '>
@@ -82,7 +82,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <hr className='border-grey' />
+        <hr className='border-gray' />
 
         {/* PACKAGES BUTTON */}
         <Link
