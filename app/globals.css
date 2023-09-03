@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 /* Embracing Transformation with Mimosha */
+/* BASE STYLE */
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+/* main {
+  @apply pt-20;
+} */
+
 /* COMMON CLASSES */
 .wrapper {
   @apply container mx-auto px-5 md:px-0;
 }
-main {
-  @apply pt-20;
-}
+
 .section-padding {
   @apply py-16 md:py-20;
 }
