@@ -39,6 +39,9 @@ html {
 .headline1 {
   @apply gap-3.5 text-4xl sm:text-5xl md:text-7xl lg:text-8xl 2xl:text-8xl 2xl:text-[8rem];
 }
+.headline-2 {
+  @apply text-7xl 2xl:text-8xl;
+}
 
 .hero-col-height {
   @apply h-[6rem] md:h-[8rem];

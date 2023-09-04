@@ -87,7 +87,7 @@ const Hero = () => {
         {/* PACKAGES BUTTON */}
         <Link
           href='/#packages'
-          className='eq group absolute bottom-[22%] left-[30%] z-[1] flex h-28 w-28 items-center justify-center overflow-hidden rounded-full bg-dark text-lg uppercase text-light shadow-2xl shadow-dark/50 hover:shadow-violet/50 sm:bottom-[18%] md:bottom-[20%] md:left-[45%] md:h-32 md:w-32'
+          className='eq group absolute bottom-[22%] left-[30%] z-[1] flex h-28 w-28 items-center justify-center overflow-hidden rounded-full bg-dark text-lg uppercase text-light shadow-2xl shadow-dark/50 hover:shadow-violet/50 sm:bottom-[18%] md:bottom-[20%] md:left-[45%] md:h-32 md:w-32 2xl:h-40 2xl:w-40'
         >
           <p className='z-[3]'>Packages</p>
           {/* FILLER 1*/}
