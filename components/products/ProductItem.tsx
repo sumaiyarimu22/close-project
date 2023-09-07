@@ -2,6 +2,7 @@ import { productItem } from '@/types/productItem';
 import Image from 'next/image';
 import Link from 'next/link';
 import { buttonVariants } from '../ui/Button';
+import { formatCurrency } from '@/utils/formatCurrency';
 
 interface ProductItemProps {
   item: productItem;
@@ -9,27 +10,33 @@ interface ProductItemProps {
 
 const ProductItem: React.FC<ProductItemProps> = ({ item }) => {
   return (
-    <div className='h-full w-full overflow-hidden rounded-xl border border-gray p-5'>
-      <div className='h-[15rem] w-full overflow-hidden rounded-lg'>
+    <div className='flex h-full w-full flex-col gap-5 overflow-hidden rounded-xl border border-gray p-5'>
+      <Link
+        href={`/products/${item.id}`}
+        className='group h-[15rem] w-full overflow-hidden rounded-lg'
+      >
         <Image
           src={item.images[0]}
           alt={item.title}
           width={640}
           height={600}
           priority
-          className='h-full w-full object-cover'
+          className='eq h-full w-full object-cover group-hover:scale-125'
         />
-      </div>
+      </Link>
       <div className='flex flex-col gap-2.5'>
-        <span className='text-xs font-semibold uppercase tracking-widest text-orange'>
+        <span className='text-xs font-bold uppercase tracking-widest text-orange'>
           {item.category}
         </span>
         <h3 className='truncate text-2xl'>{item.title}</h3>
         <hr className='opacity-25' />
         <p className='opacity-60'>{item.description.substring(0, 150)}...</p>
-        <div className='flex items-center justify-center gap-5'>
-          <p>{item.price}</p>
-          <Link href={`/products/${item.id}`} className={buttonVariants()}>
+        <div className='flex items-center justify-between gap-5'>
+          <p className='text-2xl'>{formatCurrency(item.price)}</p>
+          <Link
+            href={`/products/${item.id}`}
+            className={buttonVariants({ variant: 'ocean' })}
+          >
             Buy now
           </Link>
         </div>
