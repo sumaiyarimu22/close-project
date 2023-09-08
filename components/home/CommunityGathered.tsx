@@ -22,7 +22,7 @@ const CommunityGathered = () => {
             <Image
               src='https://images.pexels.com/photos/5581787/pexels-photo-5581787.jpeg'
               alt='Graceful Woman with her Arms Raised Underwater'
-              width={1000}
+              width={800}
               height={1000}
               priority
               className='h-full w-full object-cover'
